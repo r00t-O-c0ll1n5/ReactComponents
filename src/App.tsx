@@ -1,20 +1,11 @@
-import ListGroup from "./components/ListGroup";
+import Uses from "./components/Uses";
 
 function App() {
-  let items = ["Speed", "Flexibility", "Reusbility", "Performance", "Rich"];
-
-  const handleSelectItem = (item: string) => {
-    console.log(item);
-  };
-
   return (
     <div>
-      {" "}
-      <ListGroup
-        items={items}
-        heading="Top Perks"
-        onSelectItem={handleSelectItem}
-      />
+      <Uses>
+        Top 5 <span> Real World Applications </span>{" "}
+      </Uses>
     </div>
   );
 }
